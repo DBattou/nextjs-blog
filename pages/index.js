@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -14,6 +15,20 @@ export default function Home() {
           Humeur du moment ==> <a href="https://nextjs.org/learn">Next.js ⏭</a>
         </p>
       </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
       <footer>
         <a href="https://github.com/DBattou" target="_blank" rel="noopener noreferrer">
           Powered by Battou !
@@ -22,4 +37,12 @@ export default function Home() {
       </footer>
     </Layout>
   )
+}
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
 }
