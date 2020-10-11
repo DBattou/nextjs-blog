@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import styles from './index.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import NextJsLogo from '../components/icons/nextjsLogo'
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,8 +13,11 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, Je suis Baptiste Doucerain, développeur Javascript</p>
-        <p>
-          Humeur du moment ==> <a href="https://nextjs.org/learn">Next.js ⏭</a>
+        <p className={styles.interestContainer}>
+          <p className={styles.interest}>{'Humeur du moment ==>'}</p>
+          <a href="https://nextjs.org/learn" className={styles.imageContainer}>
+            <NextJsLogo className={styles.image}></NextJsLogo>
+          </a>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -31,8 +36,8 @@ export default function Home({ allPostsData }) {
       </section>
       <footer>
         <a href="https://github.com/DBattou" target="_blank" rel="noopener noreferrer">
-          Powered by Battou !
-          <img src="/images/mario.png" alt="Baptiste Logo" className="logo" />
+          Powered by DBattou
+          <img src="/images/GitHub.png" alt="Baptiste Logo" className="logo" />
         </a>
       </footer>
     </Layout>
