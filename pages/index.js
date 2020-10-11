@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, Je suis Baptiste Doucerain, développeur Javascript</p>
+        <p>Hello, Je suis Baptiste Doucerain, développeur web</p>
         <p className={styles.interestContainer}>
           <p className={styles.interest}>{'Humeur du moment ==>'}</p>
           <a href="https://nextjs.org/learn" className={styles.imageContainer}>
