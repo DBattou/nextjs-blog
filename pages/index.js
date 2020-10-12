@@ -57,6 +57,16 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
 
+      {/* Section CSS*/}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>CSS Animation</h2>
+        <ul className={utilStyles.list}>
+          <li className={utilStyles.listItem}>
+            <a href="/css-animation/heart.html">Border stroke</a>
+          </li>
+        </ul>
+      </section>
+
       {/* Section Jeux */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Mini Jeux</h2>

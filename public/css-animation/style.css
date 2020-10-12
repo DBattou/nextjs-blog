@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #06181f;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+}
+
+.container .icon {
+  width: 200px;
+  height: 200px;
+}
+
+.container .icon path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: #31e8ff;
+
+  stroke-dasharray: 1307;
+  stroke-dashoffset: 0;
+}
+
+.container .icon:hover path {
+  animation: animate-heart 1s linear forwards;
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 1307;
+  }
+
+  80% {
+    stroke-dashoffset: 2614;
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dashoffset: 2614;
+    fill: #31e8ff;
+  }
+}
