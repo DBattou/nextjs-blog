@@ -6,7 +6,7 @@ Live demo => https://nextjs-blog.dbattou.vercel.app/
 
 ## Roadmap
 
-- FEATURE 1 : Add POC on Framer Motion
+- FEATURE 1 : Add POC on Framer Motion 👍
 - FEATURE 7 : POC on responsive Layout with an MUI Grid
 - FEATURE 2 : Ad mutli zones Next JS https://nextjs.org/docs/advanced-features/multi-zones
 - FEATURE 3 : Host static projects on the Vercel server
