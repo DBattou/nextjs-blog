@@ -16,11 +16,44 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Hello, Je suis Baptiste Doucerain, développeur web</p>
         <p className={styles.interestContainer}>
-          <p className={styles.interest}>{'Humeur du moment ==>'}</p>
+          <p className={styles.interest}>{'Voici un blog créé grâce à'}</p>
           <a href="https://nextjs.org/learn" className={styles.imageContainer}>
             <NextJsLogo className={styles.image}></NextJsLogo>
           </a>
         </p>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Mini Jeux</h2>
+        <ul className={utilStyles.list}>
+          <li className={utilStyles.listItem}>
+            <a href="https://georges-tictactoe.herokuapp.com">Tic Tac Toe</a>
+            <br />
+            <a href="https://github.com/DBattou/TicTacToe">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
+          <li className={utilStyles.listItem}>
+            <a>Motorcycle</a>
+            <br />
+            <a href="https://github.com/DBattou/motorcycle">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
+          <li className={utilStyles.listItem}>
+            <a>Snake</a>
+            <br />
+            <a href="https://github.com/DBattou/snake">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
+          <li className={utilStyles.listItem}>
+            <a>Moonlander</a>
+            <br />
+            <a href="https://github.com/DBattou/moonLander">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
+        </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -41,7 +74,7 @@ export default function Home({ allPostsData }) {
       <footer>
         <a href="https://github.com/DBattou" target="_blank" rel="noopener noreferrer">
           Powered by DBattou
-          <img src="/images/GitHub.png" alt="Baptiste Logo" className="logo" />
+          <img src="/images/GitHub.png" alt="Github Logo" className="logo" />
         </a>
       </footer>
     </Layout>
