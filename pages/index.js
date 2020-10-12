@@ -33,25 +33,25 @@ export default function Home({ allPostsData }) {
             </a>
           </li>
           <li className={utilStyles.listItem}>
-            <a>Motorcycle</a>
+            <a href="https://cocky-perlman-8e935d.netlify.app/">Motorcycle</a>
             <br />
             <a href="https://github.com/DBattou/motorcycle">
               <small className={utilStyles.lightText}>Lien Github</small>
             </a>
           </li>
           <li className={utilStyles.listItem}>
-            <a>Snake</a>
-            <br />
-            <a href="https://github.com/DBattou/snake">
+            <p>Snake (incoming)</p>
+            {/* <br /> */}
+            {/* <a href="https://github.com/DBattou/snake">
               <small className={utilStyles.lightText}>Lien Github</small>
-            </a>
+            </a> */}
           </li>
           <li className={utilStyles.listItem}>
-            <a>Moonlander</a>
-            <br />
+            <p>Moonlander (incoming)</p>
+            {/* <br />
             <a href="https://github.com/DBattou/moonLander">
               <small className={utilStyles.lightText}>Lien Github</small>
-            </a>
+            </a> */}
           </li>
         </ul>
       </section>
