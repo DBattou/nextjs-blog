@@ -13,15 +13,51 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      {/* Section Présentation */}
       <section className={utilStyles.headingMd}>
         <p>Hello, Je suis Baptiste Doucerain, développeur web</p>
-        <p className={styles.interestContainer}>
+        <div className={styles.interestContainer}>
           <p className={styles.interest}>{'Voici un blog créé grâce à'}</p>
           <a href="https://nextjs.org/learn" className={styles.imageContainer}>
             <NextJsLogo className={styles.image}></NextJsLogo>
           </a>
-        </p>
+        </div>
       </section>
+
+      {/* Section Blog */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Section Poc */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Proof of Concepts</h2>
+        <ul className={utilStyles.list}>
+          <li className={utilStyles.listItem}>
+            <a href="https://framer-motion-poc.vercel.app/">Framer Motion</a>
+            <br />
+            <a href="https://github.com/DBattou/framer-motion-poc">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      {/* Section Jeux */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Mini Jeux</h2>
         <ul className={utilStyles.list}>
@@ -55,22 +91,8 @@ export default function Home({ allPostsData }) {
           </li>
         </ul>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+
+      {/* Section Footer */}
       <footer>
         <a href="https://github.com/DBattou" target="_blank" rel="noopener noreferrer">
           Powered by DBattou
@@ -80,6 +102,7 @@ export default function Home({ allPostsData }) {
     </Layout>
   )
 }
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
