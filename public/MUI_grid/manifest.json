@@ -1,14 +1,11 @@
 {
-  "short_name": "Tic-Tac-Toe",
-  "name": "Tic-Tac-Toe",
+  "short_name": "MUI Grid",
+  "name": "MUI Grid",
   "start_url": ".",
   "display": "standalone",
-  "description": "Game tic tac toe App",
   "icons": [
     {
-      "src": "icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/png"
     }
   ],
   "theme_color": "#000000",
