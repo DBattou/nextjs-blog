@@ -61,6 +61,13 @@ export default function Home({ allPostsData }) {
               <small className={utilStyles.lightText}>Lien Github</small>
             </a>
           </li>
+          <li className={utilStyles.listItem}>
+            <a href="/css-grid/index.html">Responsive UI using CSS Grid</a>
+            <br />
+            <a href="https://github.com/DBattou/CSS_Grid_responsive_layout.git">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -93,7 +100,7 @@ export default function Home({ allPostsData }) {
             </a>
           </li>
           <li className={utilStyles.listItem}>
-            <p>Snake (incoming)</p>
+            <a href="/snake/index.html">Snake</a>
             {/* <br /> */}
             {/* <a href="https://github.com/DBattou/snake">
               <small className={utilStyles.lightText}>Lien Github</small>
