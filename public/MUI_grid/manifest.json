@@ -1,0 +1,16 @@
+{
+  "short_name": "Tic-Tac-Toe",
+  "name": "Tic-Tac-Toe",
+  "start_url": ".",
+  "display": "standalone",
+  "description": "Game tic tac toe App",
+  "icons": [
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

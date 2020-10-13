@@ -54,6 +54,13 @@ export default function Home({ allPostsData }) {
               <small className={utilStyles.lightText}>Lien Github</small>
             </a>
           </li>
+          <li className={utilStyles.listItem}>
+            <a href="/MUI_grid/index.html">Responsive UI using MUI Grid</a>
+            <br />
+            <a href="https://github.com/DBattou/MUI_grid_responsive_layout">
+              <small className={utilStyles.lightText}>Lien Github</small>
+            </a>
+          </li>
         </ul>
       </section>
 
