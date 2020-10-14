@@ -24,7 +24,7 @@ export default function LinkedinBadge() {
           class="LI-simple-link"
           href="https://fr.linkedin.com/in/baptiste-d-ab179299?trk=profile-badge"
         >
-          Baptiste D.
+          Linkedin Baptiste D.
         </a>
       </div>
     </div>
