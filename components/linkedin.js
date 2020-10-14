@@ -11,7 +11,7 @@ export default function LinkedinBadge() {
       ></script>
 
       <div
-        class="LI-profile-badge"
+        className="LI-profile-badge"
         style={{ position: 'fixed', top: '15px', left: '15px' }}
         data-version="v1"
         data-size="medium"

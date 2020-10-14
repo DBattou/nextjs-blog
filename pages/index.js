@@ -65,7 +65,7 @@ export default function Home({ allPostsData }) {
               </a>
             </li>
             <li className={utilStyles.listItem}>
-              <a href="/css-grid/index.html">Responsive UI using CSS Grid</a>
+              <a href="/css-grid">Responsive UI using CSS Grid</a>
               <br />
               <a href="https://github.com/DBattou/CSS_Grid_responsive_layout.git">
                 <small className={utilStyles.lightText}>Lien Github</small>
