@@ -114,8 +114,8 @@ GET video/_search
 }
 ```
 
-Explications :
-La ligne n°3 indique un contexte Query
+Explications
+La ligne n°3 : indique un contexte Query
 
 La ligne n°4 : une clause booléene (Combinaison de de plusieurs clauses) dans le contexte query. Ce qui signifie qu'un score qui représente la pertinence de chaque document, va être calculé.
 
