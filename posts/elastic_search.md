@@ -1,11 +1,15 @@
+---
+title: 'Elasticsearch en 5min'
+date: '2020-11-20'
+---
+
 # Elasticsearch en 5 minutes
 
-Hey Salut ! Quels les concepts clés de Elasticsearch. Qu'ai-je besoin de savoir pour commencer à utiliser Elasticsearch ?
+Hey Salut ! Quels sont les concepts clés de Elasticsearch ? Qu'ai-je besoin de savoir pour commencer à utiliser Elasticsearch ?
 
 Ici on essaye de présenter les choses facilement en y allant pas à pas, un concept après l'autre.
 
 Vous allez voir ces concepts :
-
 1. Elasticsearch, un moteur de recherche.
 2. Les Query
 3. Les Clauses
